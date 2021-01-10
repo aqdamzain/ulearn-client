@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = "https://ulearn-id.azurewebsites.net";//"http://localhost/ulearn";
+$config['base_url'] = "http://localhost/ulearn";//"https://ulearn-id.azurewebsites.net/";
 
 /*
 |--------------------------------------------------------------------------
