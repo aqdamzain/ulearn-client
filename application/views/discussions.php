@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </button>
 
                         <!-- Navbar Brand -->
-                        <a href="index.html"
+                        <a href="<?php echo base_url() ?>"
                            class="navbar-brand mr-16pt">
                             <!-- <img class="navbar-brand-icon" src="../../public/images/logo/white-100@2x.png" width="30" alt="Luma"> -->
 
@@ -113,7 +113,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
                             <li class="nav-item">
-                                <a href="index.html"
+                                <a href="<?php echo base_url() ?>"
                                    class="nav-link">Beranda</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-toggle="dropdown"
                                    data-caret="false">Kelas</a>
                                 <div class="dropdown-menu">
-                                    <a href="courses.html"
+                                    <a href="<?php echo base_url() ?>courses"
                                        class="dropdown-item">Lihat Daftar Kelas</a>
                                 </div>
                             </li>
@@ -132,11 +132,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-toggle="dropdown"
                                    data-caret="false">Student</a>
                                    <div class="dropdown-menu">
-                                    <a href="student-dashboard.html"
+                                    <a href="<?php echo base_url() ?>student_dashboard"
                                        class="dropdown-item">Student Dashboard</a>
-                                    <a href="student-my-courses.html"
+                                    <a href="<?php echo base_url() ?>student_my_courses"
                                        class="dropdown-item">My Courses</a>
-                                    <a href="student-quiz-results.html"
+                                    <a href="<?php echo base_url() ?>student_quiz_results"
                                        class="dropdown-item">My Quizzes</a>
                                 </div>
                             </li>
@@ -146,9 +146,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-toggle="dropdown"
                                    data-caret="false">Tutor</a>
                                    <div class="dropdown-menu">
-                                    <a href="instructor-courses.html"
+                                    <a href="<?php echo base_url() ?>instructor_courses"
                                        class="dropdown-item">Instructor Dashboard</a>
-                                    <a href="instructor-quizzes.html"
+                                    <a href="<?php echo base_url() ?>instructor_quizzes"
                                        class="dropdown-item">Manage Quiz</a>
                                 </div>
                             </li>
@@ -164,11 +164,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <i class="material-icons">people_outline</i>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a href="discussions.html"
+                                    <a href="<?php echo base_url() ?>discussions"
                                        class="dropdown-item active">Discussions</a>
-                                    <a href="discussion.html"
+                                    <a href="<?php echo base_url() ?>discussion"
                                        class="dropdown-item">Discussion Details</a>
-                                    <a href="discussions-ask.html"
+                                    <a href="<?php echo base_url() ?>discussions_ask"
                                        class="dropdown-item">Ask Question</a>
                                 </div>
                             </li>
@@ -186,7 +186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <ul class="nav navbar-nav ml-auto mr-0">
                             <li class="nav-item">
-                                <a href="login.html"
+                                <a href="<?php echo base_url() ?>login"
                                    class="nav-link"
                                    data-toggle="tooltip"
                                    data-title="Login"
@@ -194,7 +194,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-boundary="window"><i class="material-icons">lock_open</i></a>
                             </li>
                             <li class="nav-item">
-                                <a href="signup.html"
+                                <a href="<?php echo base_url() ?>signup"
                                    class="btn btn-outline-white">Get Started</a>
                             </li>
                         </ul>
@@ -252,7 +252,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                    class="dropdown-item">Unanswered</a>
                                             </div>
                                         </div>
-                                        <a href="discussions-ask.html"
+                                        <a href="<?php echo base_url() ?>discussions_ask"
                                            class="btn btn-accent">Ask a question</a>
                                     </div>
                                 </div>
@@ -279,10 +279,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-8pt"><a href="discussion.html"
+                                            <p class="mb-8pt"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Penggunaaan ESP32 dibandingkan ESP8266</strong></a></p>
 
-                                            <a href="discussion.html"
+                                            <a href="<?php echo base_url() ?>discussion"
                                                class="chip chip-outline-secondary">Perancangan Sistem Embedded</a>
 
                                         </div>
@@ -312,7 +312,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-0"><a href="discussion.html"
+                                            <p class="mb-0"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Kenapa modul Wi-Fi pada ESP8266 saya tidak berfungsi</strong></a></p>
 
                                         </div>
@@ -342,7 +342,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-0"><a href="discussion.html"
+                                            <p class="mb-0"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Penggunaaan ESP32 dibandingkan ESP8266</strong></a></p>
 
                                         </div>
@@ -372,7 +372,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-0"><a href="discussion.html"
+                                            <p class="mb-0"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Kenapa modul Wi-Fi pada ESP8266 saya tidak berfungsi</strong></a></p>
 
                                         </div>
@@ -491,7 +491,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <!-- Sidebar Content -->
 
-                    <a href="index.html"
+                    <a href="<?php echo base_url() ?>"
                        class="sidebar-brand ">
                         <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
 
@@ -511,35 +511,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="index.html">
+                               href="<?php echo base_url() ?>">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">Beranda</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="courses.html">
+                               href="<?php echo base_url() ?>courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">local_library</span>
                                 <span class="sidebar-menu-text">Lihat Daftar Kelas</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="student-dashboard.html">
+                               href="<?php echo base_url() ?>student_dashboard">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">style</span>
                                 <span class="sidebar-menu-text">Student Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="student-my-courses.html">
+                               href="<?php echo base_url() ?>student_my_courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">search</span>
                                 <span class="sidebar-menu-text">My Courses</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="student-quiz-results.html">
+                               href="<?php echo base_url() ?>student_quiz_results">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
                                 <span class="sidebar-menu-text">My Quizzes</span>
                             </a>
@@ -550,14 +550,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="instructor-courses.html">
+                               href="<?php echo base_url() ?>instructor_courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
                                 <span class="sidebar-menu-text">Instructor Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="instructor-quizzes.html">
+                               href="<?php echo base_url() ?>instructor_quizzes">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
                                 <span class="sidebar-menu-text">Manage Quizzes</span>
                             </a>
