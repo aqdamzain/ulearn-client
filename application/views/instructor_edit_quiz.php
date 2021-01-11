@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Navbar Brand -->
 
-                        <a href="index.html"
+                        <a href="<?php echo base_url() ?>"
                            class="navbar-brand mr-16pt">
 
                             <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
@@ -132,7 +132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
                             <li class="nav-item">
-                                <a href="index.html"
+                                <a href="<?php echo base_url() ?>"
                                    class="nav-link">Beranda</a>
                             </li>
                             <li class="nav-item dropdown active">
@@ -141,9 +141,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-toggle="dropdown"
                                    data-caret="false">Tutor</a>
                                 <div class="dropdown-menu">
-                                    <a href="instructor-courses.html"
+                                    <a href="<?php echo base_url() ?>instructor_-courses"
                                        class="dropdown-item">Instructor Dashboard</a>
-                                    <a href="instructor-quizzes.html"
+                                    <a href="<?php echo base_url() ?>instructor_quizzes"
                                        class="dropdown-item active">Manage Quiz</a>
                                 </div>
                             </li>
@@ -159,11 +159,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <i class="material-icons">people_outline</i>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a href="discussions.html"
+                                    <a href="<?php echo base_url() ?>discussions"
                                        class="dropdown-item">Discussions</a>
-                                    <a href="discussion.html"
+                                    <a href="<?php echo base_url() ?>discussion"
                                        class="dropdown-item">Discussion Details</a>
-                                    <a href="discussions-ask.html"
+                                    <a href="<?php echo base_url() ?>discussions_ask"
                                        class="dropdown-item">Ask Question</a>
                                 </div>
                             </li>
@@ -338,13 +338,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-header"><strong>Account</strong></div>
                                     <a class="dropdown-item"
-                                       href="edit-account.html">Edit Account</a>
+                                       href="<?php echo base_url() ?>edit_account">Edit Account</a>
                                     <a class="dropdown-item"
-                                       href="billing.html">Billing</a>
-                                    <a class="dropdown-item"
-                                       href="billing-history.html">Payments</a>
-                                    <a class="dropdown-item"
-                                       href="login.html">Logout</a>
+                                       href="<?php echo base_url() ?>login">Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +367,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <h2 class="mb-0">Edit Quiz</h2>
 
                                 <ol class="breadcrumb p-0 m-0">
-                                    <li class="breadcrumb-item"><a href="instructor-quizzes.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="<?php echo base_url() ?>instructor_quizzes">Home</a></li>
 
                                     <li class="breadcrumb-item active">
 
@@ -597,7 +593,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <!-- Sidebar Content -->
 
-                    <a href="index.html"
+                    <a href="<?php echo base_url() ?>"
                        class="sidebar-brand ">
                         <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/teacher/128/white.svg" alt="Luma"> -->
 
@@ -617,21 +613,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="index.html">
+                               href="<?php echo base_url() ?>">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">Beranda</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="instructor-courses.html">
+                               href="<?php echo base_url() ?>instructor_courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
                                 <span class="sidebar-menu-text">Instructor Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item active">
                             <a class="sidebar-menu-button"
-                               href="instructor-quizzes.html">
+                               href="<?php echo base_url() ?>instructor_quizzes">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
                                 <span class="sidebar-menu-text">Manage Quizzes</span>
                             </a>
