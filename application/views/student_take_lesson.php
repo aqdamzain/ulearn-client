@@ -102,7 +102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Navbar Brand -->
 
-                        <a href="index.html"
+                        <a href="<?php echo base_url() ?>"
                            class="navbar-brand mr-16pt">
 
                             <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!-- // END Navbar Brand -->
                         <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
                             <li class="nav-item">
-                                <a href="index.html"
+                                <a href="<?php echo base_url() ?>"
                                    class="nav-link">Beranda</a>
                             </li>
                             <li class="nav-item dropdown active">
@@ -128,11 +128,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    data-toggle="dropdown"
                                    data-caret="false">Student</a>
                                 <div class="dropdown-menu">
-                                    <a href="student-dashboard.html"
+                                    <a href="<?php echo base_url() ?>student_dashboard"
                                        class="dropdown-item">Student Dashboard</a>
-                                    <a href="student-my-courses.html"
+                                    <a href="<?php echo base_url() ?>student_my_courses"
                                        class="dropdown-item active">My Courses</a>
-                                    <a href="student-quiz-results.html"
+                                    <a href="<?php echo base_url() ?>student_quiz_results"
                                        class="dropdown-item">My Quizzes</a>
                                 </div>
                             </li>
@@ -148,11 +148,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <i class="material-icons">people_outline</i>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a href="discussions.html"
+                                    <a href="<?php echo base_url() ?>discussions"
                                        class="dropdown-item">Discussions</a>
-                                    <a href="discussion.html"
+                                    <a href="<?php echo base_url() ?>discussion"
                                        class="dropdown-item">Discussion Details</a>
-                                    <a href="discussions-ask.html"
+                                    <a href="<?php echo base_url() ?>discussions_ask"
                                        class="dropdown-item">Ask Question</a>
                                 </div>
                             </li>
@@ -328,9 +328,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-header"><strong>Account</strong></div>
                                     <a class="dropdown-item"
-                                       href="edit-account.html">Edit Account</a>
+                                       href="<?php echo base_url() ?>edit_account">Edit Account</a>
                                     <a class="dropdown-item"
-                                       href="login.html">Logout</a>
+                                       href="<?php echo base_url() ?>login">Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -356,13 +356,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="nav-item py-16pt py-sm-0">
                                 <div class="media flex-nowrap">
                                     <div class="media-left mr-16pt">
-                                        <a href="student-take-course.html"><img src="<?php echo base_url() ?>assets/public/images/paths/kemjar_80x80.jpg"
+                                        <a href="<?php echo base_url() ?>student_take_course"><img src="<?php echo base_url() ?>assets/public/images/paths/kemjar_80x80.jpg"
                                                  width="40"
                                                  alt="Angular"
                                                  class="rounded"></a>
                                     </div>
                                     <div class="media-body d-flex flex-column">
-                                        <a href="student-take-course.html"
+                                        <a href="<?php echo base_url() ?>student_take_course"
                                            class="card-title">Keamanan Jaringan Komputer</a>
                                         <div class="d-flex">
                                             <span class="text-50 small font-weight-bold mr-8pt">Fajar Milleano</span>
@@ -454,7 +454,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </span>
                                     <div class="media-body">
                                         <a class="card-title m-0"
-                                           href="teacher-profile.html">Fajar Milleano</a>
+                                           href="<?php echo base_url() ?>teacher_profile">Fajar Milleano</a>
                                         <p class="text-50 lh-1 mb-0">Instructor</p>
                                     </div>
                                 </div>
@@ -476,7 +476,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <div class="d-flex align-items-center mb-heading">
                             <h4 class="m-0">Discussions</h4>
-                            <a href="discussions-ask.html"
+                            <a href="<?php echo base_url() ?>discussions_ask"
                                class="text-underline ml-auto">Ask a Question</a>
                         </div>
 
@@ -503,10 +503,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-8pt"><a href="discussion.html"
+                                            <p class="mb-8pt"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Bagaimana cara unutk memantau traffic jaringan pada suatu jaringan lokal ?</strong></a></p>
 
-                                            <a href="discussion.html"
+                                            <a href="<?php echo base_url() ?>discussion"
                                                class="chip chip-outline-secondary">Keamanan Jaringan</a>
 
                                         </div>
@@ -536,7 +536,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="col mb-8pt mb-md-0">
-                                            <p class="mb-0"><a href="discussion.html"
+                                            <p class="mb-0"><a href="<?php echo base_url() ?>discussion"
                                                    class="text-body"><strong>Apakah terdapat jenis serangan yang tidak bisa dideteksi ?</strong></a></p>
 
                                         </div>
@@ -551,7 +551,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         </div>
 
-                        <a href="discussions.html"
+                        <a href="<?php echo base_url() ?>discussions"
                            class="btn btn-outline-secondary">See all discussions for this lesson</a>
 
                     </div>
@@ -596,7 +596,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <!-- Sidebar Content -->
 
-                    <a href="index.html"
+                    <a href="<?php echo base_url() ?>"
                        class="sidebar-brand ">
                         <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
 
@@ -616,35 +616,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="index.html">
+                               href="<?php echo base_url() ?>">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">Beranda</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="courses.html">
+                               href="<?php echo base_url() ?>courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">local_library</span>
                                 <span class="sidebar-menu-text">Lihat Daftar Kelas</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="student-dashboard.html">
+                               href="<?php echo base_url() ?>student_dashboard">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">style</span>
                                 <span class="sidebar-menu-text">Student Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item active">
                             <a class="sidebar-menu-button"
-                               href="student-my-courses.html">
+                               href="<?php echo base_url() ?>student_my_courses">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">search</span>
                                 <span class="sidebar-menu-text">My Courses</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
-                               href="student-quiz-results.html">
+                               href="<?php echo base_url() ?>student_quiz_results>
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
                                 <span class="sidebar-menu-text">My Quizzes</span>
                             </a>
